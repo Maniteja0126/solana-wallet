@@ -21,12 +21,12 @@ const WalletList = ({
           transition={{ duration: 0.4 }}
         >
           <div
-            className={`
-            ${
-              isDarkMode
+            className={`          
+            ${isDarkMode
                 ? "border-gray-300 bg-gray-700  text-gray-300"
                 : "border-gray-600 bg-gray-100  text-gray-700"
-            }p-8 rounded-lg shadow-lg max-w-3xl w-11/12 h-5/6 overflow-y-auto relative`}
+              }
+              p-8 rounded-lg shadow-lg max-w-3xl w-11/12 h-5/6 overflow-y-auto relative`}
           >
             <button
               onClick={onClose}

@@ -20,16 +20,14 @@ const ViewAllButton = ({
   return (
     <div
       className={` 
-        ${
-          isDarkMode
-            ? "border-gray-700 bg-gray-900"
-            : "border-gray-300 bg-white-200"
+        ${isDarkMode
+          ? "border-gray-700 bg-gray-900"
+          : "border-gray-300 bg-white-200"
         }`}
     >
       <motion.button
-        className={`px-6 py-2 rounded-lg font-medium relative overflow-hidden ${
-          isDarkMode ? "bg-indigo-600 text-white" : "bg-indigo-500 text-white"
-        }`}
+        className={`px-6 py-2 rounded-lg font-medium relative overflow-hidden ${isDarkMode ? "bg-indigo-600 text-white" : "bg-indigo-500 text-white"
+          }`}
         whileHover={{
           scale: 1.05,
           backgroundColor: isDarkMode ? "#4338ca" : "#3730a3",
